@@ -11,10 +11,21 @@ export const Product = () => {
         .then((r) => r.json())
         .then(setPost);
     getProduct();
+    // we use productId inside of the api call, so it needs to be added
+    // to the dependency array
   }, [productId]);
 
   return (
     <div>
+      {/* ternary operators are like if statements, but they are expressions
+          foo ? bar : baz
+          is like
+          if (foo) {
+            bar
+          } else {
+            baz
+          }
+      */}
       {post ? (
         <div>
           <h2>{post.title}</h2>

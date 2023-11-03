@@ -10,6 +10,8 @@ export const ProductListing = () => {
         .then((r) => r.json())
         .then(setPosts);
     getPosts();
+  // I don't need any dependencies in the array because I'm  not using any
+  // other variables in my api calls
   }, []);
   return (
     <ul>

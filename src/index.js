@@ -10,6 +10,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    // in order for chidlren to render properly, the element needs to have an <Outlet />
     children: [
       {
         path: "products",

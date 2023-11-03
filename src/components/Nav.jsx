@@ -1,14 +1,16 @@
+// we use <Link> components instead of <a> tags
+import { Link } from 'react-router-dom';
 export const Nav = () => (
   <nav>
     <ul>
       <li>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <a href="/products">Products</a>
+        <Link to="/products">Products</Link>
       </li>
       <li>
-        <a href="/cart">Shopping Cart</a>
+        <Link to="/cart">Shopping Cart</Link>
       </li>
     </ul>
   </nav>
